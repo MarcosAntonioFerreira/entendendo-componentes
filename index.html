@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias Galactica</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <script src="src/Components/cardNews.js" defer></script>
+    <script src="src/Components/TituloDinamico.js" defer></script>
+</head>
+<body>
+    <h2>Elemento HTML </h2>
+    <div class="container">
+        <div class="card">
+            <div class="card__left">
+                <span>By Marcos Almeida</span>
+                <a href="#">Darth Vader Contrata Devs</a>
+                <p>Dart Vader procura desenvolvedores que sabem trabalhar com componentes</p>
+            </div>
+            <div class="card__right">
+                <img src="assets/vade-love.png" alt="">
+            </div>
+        </div>
+    </div>
+    <h2 style="margin-top: 20px;">Componentes</h2>
+    <card-news
+        autor="Marcos Almeida"
+        title="Darth Vader Contrata"
+        link-url="www.google.com"
+        photo="assets/vade-love.png"
+        content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+    ></card-news>
+
+    <card-news
+        autor="Marcos Almeida"
+        title="Luke quer exame de DNA do Ratinho"
+        link-url="www.google.com"
+        photo="assets/luke.png"
+        content="Luke não acredita que Dart Vader é seu pai!"
+    ></card-news>
+
+
+</body>
+</html>
